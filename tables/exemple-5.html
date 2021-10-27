@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Adding a Caption to the HTML Table</title>
+    <style>
+        table {
+            width: 300px;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+        }
+        table.secondary caption {
+            caption-side: bottom;
+        }
+    </style>
+</head>
+<body>
+    <h2>Table with Caption at the Top</h2>
+    <table>
+        <caption>Users Info</caption>
+        <tr>
+            <th>No.</th>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Peter Parker</td>
+            <td>16</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Clark Kent</td>
+            <td>34</td>
+        </tr>
+    </table>
+
+    <h2>Table with Caption at the Bottom</h2>
+    <table class="secondary">
+        <caption>Users Info</caption>
+        <tr>
+            <th>No.</th>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Peter Parker</td>
+            <td>16</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Clark Kent</td>
+            <td>34</td>
+        </tr>
+    </table>
+</body>
+</html
